@@ -1,190 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中間発表資料</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.1">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .top {
+      padding-left: 50px;
+      margin: 50px 0;
+    }
+    .box-wrap {
+      overflow: hidden;
+    }
+    .box {
+      width: 45vw;
+      float: left;
+    }
+    .box-arrow {
+      width: 10vw;
+      height: 20vw;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .audio-box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .audio-box>* {
+      overflow: hidden;
+    }
+
+    .photo {
+      width: 100%;
+      filter: drop-shadow(5px 5px 5px #222);
+    }
+  </style>
+  <title>PD3検証結果</title>
 </head>
 <body>
-    <h1>変換結果</h1>
-    <div>
-        <h2>AutoVC: スペクトログラム</h2>
-        <table style="background:skyblue;" border="1" cellspacing="0">
-            <tr>
-                <th>変換元</th>
-                <th>音源</th>
-                <th>p226</th>
-                <th>p230</th>
-                <th>p231</th>
-                <th>p232</th>
-            </tr>
-            <tr>
-                <th>p226</th>
-                <td>
-                    <audio src="./original/p226.wav" controls></audio>
-                </td>
-                
-                <td>
-                    <audio src="./mel/output_p226_p226.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p226_p230.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p226_p231.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p226_p232.wav" controls></audio>
-                </td>
-            </tr>
-            <tr>
-                <th>p230</th>
-                <td>
-                    <audio src="./original/p230.wav" controls></audio>
-                </td>
-                
-                <td>
-                    <audio src="./mel/output_p230_p226.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p230_p230.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p230_p231.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p230_p232.wav" controls></audio>
-                </td>
-            </tr>
-            <tr>
-                <th>p231</th>
-                <td>
-                    <audio src="./original/p231.wav" controls></audio>
-                </td>
-                
-                <td>
-                    <audio src="./mel/output_p231_p226.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p231_p230.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p231_p231.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p231_p232.wav" controls></audio>
-                </td>
-            </tr>
-            <tr>
-                <th>p232</th>
-                <td>
-                    <audio src="./original/p232.wav" controls></audio>
-                </td>
-                
-                <td>
-                    <audio src="./mel/output_p232_p226.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p232_p230.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p232_p231.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./mel/output_p232_p232.wav" controls></audio>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div>
-        <h2>AutoVC: World</h2>
-        <table style="background:orange;" border="1" cellspacing="0">
-            <tr>
-                <th>変換元</th>
-                <th>音源</th>
-                <th>p226</th>
-                <th>p230</th>
-                <th>p231</th>
-                <th>p232</th>
-            </tr>
-            <tr>
-                <th>p226</th>
-                <td>
-                    <audio src="./original/p226.wav" controls></audio>
-                </td>
-                
-                <td>
-                    <audio src="./world/output_p226_p226.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p226_p230.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p226_p231.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p226_p232.wav" controls></audio>
-                </td>
-            </tr>
-            <tr>
-                <th>p230</th>
-                <td>
-                    <audio src="./original/p230.wav" controls></audio>
-                </td>
-                
-                <td>
-                    <audio src="./world/output_p230_p226.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p230_p230.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p230_p231.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p230_p232.wav" controls></audio>
-                </td>
-            </tr>
-            <tr>
-                <th>p231</th>
-                <td>
-                    <audio src="./original/p231.wav" controls></audio>
-                </td>
-                
-                <td>
-                    <audio src="./world/output_p231_p226.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p231_p230.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p231_p231.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p231_p232.wav" controls></audio>
-                </td>
-            </tr>
-            <tr>
-                <th>p232</th>
-                <td>
-                    <audio src="./original/p232.wav" controls></audio>
-                </td>
-                
-                <td>
-                    <audio src="./world/output_p232_p226.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p232_p230.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p232_p231.wav" controls></audio>
-                </td>
-                <td>
-                    <audio src="./world/output_p232_p232.wav" controls></audio>
-                </td>
-            </tr>
-        </table>
-    </div>
+  <header class="top">
+    <h1>中間発表資料</h1>
+    <p>4EP3-77 鈴木大志</p>
+  </header>
+  <div class="box-wrap" style="background:linear-gradient(to right,#bccf3d 45%,#bccf3d 55%);"><h2>元論文の手法</h2><div class="box"><h3>p226</h3><audio src="./original/p226.wav" controls></audio><img src="./original/p226_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 4.57s</p><p><b>変換時間:</b> 855.42s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p226</h3><audio src="./mel/output_p226_p226.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p226.wav" controls></audio></div></div><img src="./mel/output_p226_p226.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#bccf3d 45%,#bccf3d 55%);"><h2>提案手法</h2><div class="box"><h3>p226</h3><audio src="./original/p226.wav" controls></audio><img src="./original/p226_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 4.57s</p><p><b>変換時間:</b> 3.41s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p226</h3><audio src="./sp/output_p226_p226.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p226.wav" controls></audio></div></div><img src="./sp/output_p226_p226.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#bccf3d 45%,#e8a0b8 55%);"><h2>元論文の手法</h2><div class="box"><h3>p226</h3><audio src="./original/p226.wav" controls></audio><img src="./original/p226_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 4.57s</p><p><b>変換時間:</b> 867.04s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p230</h3><audio src="./mel/output_p226_p230.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p230.wav" controls></audio></div></div><img src="./mel/output_p226_p230.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#bccf3d 45%,#e8a0b8 55%);"><h2>提案手法</h2><div class="box"><h3>p226</h3><audio src="./original/p226.wav" controls></audio><img src="./original/p226_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 4.57s</p><p><b>変換時間:</b> 3.65s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p230</h3><audio src="./sp/output_p226_p230.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p230.wav" controls></audio></div></div><img src="./sp/output_p226_p230.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#bccf3d 45%,#ffc300 55%);"><h2>元論文の手法</h2><div class="box"><h3>p226</h3><audio src="./original/p226.wav" controls></audio><img src="./original/p226_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 4.57s</p><p><b>変換時間:</b> 853.5s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p231</h3><audio src="./mel/output_p226_p231.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p231.wav" controls></audio></div></div><img src="./mel/output_p226_p231.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#bccf3d 45%,#ffc300 55%);"><h2>提案手法</h2><div class="box"><h3>p226</h3><audio src="./original/p226.wav" controls></audio><img src="./original/p226_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 4.57s</p><p><b>変換時間:</b> 3.02s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p231</h3><audio src="./sp/output_p226_p231.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p231.wav" controls></audio></div></div><img src="./sp/output_p226_p231.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#bccf3d 45%,#02c9c9 55%);"><h2>元論文の手法</h2><div class="box"><h3>p226</h3><audio src="./original/p226.wav" controls></audio><img src="./original/p226_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 4.57s</p><p><b>変換時間:</b> 859.14s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p232</h3><audio src="./mel/output_p226_p232.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p232.wav" controls></audio></div></div><img src="./mel/output_p226_p232.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#bccf3d 45%,#02c9c9 55%);"><h2>提案手法</h2><div class="box"><h3>p226</h3><audio src="./original/p226.wav" controls></audio><img src="./original/p226_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 4.57s</p><p><b>変換時間:</b> 3.05s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p232</h3><audio src="./sp/output_p226_p232.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p232.wav" controls></audio></div></div><img src="./sp/output_p226_p232.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#e8a0b8 45%,#bccf3d 55%);"><h2>元論文の手法</h2><div class="box"><h3>p230</h3><audio src="./original/p230.wav" controls></audio><img src="./original/p230_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.22s</p><p><b>変換時間:</b> 418.86s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p226</h3><audio src="./mel/output_p230_p226.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p226.wav" controls></audio></div></div><img src="./mel/output_p230_p226.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#e8a0b8 45%,#bccf3d 55%);"><h2>提案手法</h2><div class="box"><h3>p230</h3><audio src="./original/p230.wav" controls></audio><img src="./original/p230_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.22s</p><p><b>変換時間:</b> 1.7s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p226</h3><audio src="./sp/output_p230_p226.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p226.wav" controls></audio></div></div><img src="./sp/output_p230_p226.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#e8a0b8 45%,#e8a0b8 55%);"><h2>元論文の手法</h2><div class="box"><h3>p230</h3><audio src="./original/p230.wav" controls></audio><img src="./original/p230_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.22s</p><p><b>変換時間:</b> 417.87s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p230</h3><audio src="./mel/output_p230_p230.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p230.wav" controls></audio></div></div><img src="./mel/output_p230_p230.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#e8a0b8 45%,#e8a0b8 55%);"><h2>提案手法</h2><div class="box"><h3>p230</h3><audio src="./original/p230.wav" controls></audio><img src="./original/p230_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.22s</p><p><b>変換時間:</b> 1.97s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p230</h3><audio src="./sp/output_p230_p230.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p230.wav" controls></audio></div></div><img src="./sp/output_p230_p230.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#e8a0b8 45%,#ffc300 55%);"><h2>元論文の手法</h2><div class="box"><h3>p230</h3><audio src="./original/p230.wav" controls></audio><img src="./original/p230_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.22s</p><p><b>変換時間:</b> 417.88s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p231</h3><audio src="./mel/output_p230_p231.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p231.wav" controls></audio></div></div><img src="./mel/output_p230_p231.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#e8a0b8 45%,#ffc300 55%);"><h2>提案手法</h2><div class="box"><h3>p230</h3><audio src="./original/p230.wav" controls></audio><img src="./original/p230_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.22s</p><p><b>変換時間:</b> 1.95s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p231</h3><audio src="./sp/output_p230_p231.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p231.wav" controls></audio></div></div><img src="./sp/output_p230_p231.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#e8a0b8 45%,#02c9c9 55%);"><h2>元論文の手法</h2><div class="box"><h3>p230</h3><audio src="./original/p230.wav" controls></audio><img src="./original/p230_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.22s</p><p><b>変換時間:</b> 418.02s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p232</h3><audio src="./mel/output_p230_p232.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p232.wav" controls></audio></div></div><img src="./mel/output_p230_p232.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#e8a0b8 45%,#02c9c9 55%);"><h2>提案手法</h2><div class="box"><h3>p230</h3><audio src="./original/p230.wav" controls></audio><img src="./original/p230_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.22s</p><p><b>変換時間:</b> 2.14s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p232</h3><audio src="./sp/output_p230_p232.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p232.wav" controls></audio></div></div><img src="./sp/output_p230_p232.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#ffc300 45%,#bccf3d 55%);"><h2>元論文の手法</h2><div class="box"><h3>p231</h3><audio src="./original/p231.wav" controls></audio><img src="./original/p231_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.14s</p><p><b>変換時間:</b> 400.08s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p226</h3><audio src="./mel/output_p231_p226.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p226.wav" controls></audio></div></div><img src="./mel/output_p231_p226.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#ffc300 45%,#bccf3d 55%);"><h2>提案手法</h2><div class="box"><h3>p231</h3><audio src="./original/p231.wav" controls></audio><img src="./original/p231_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.14s</p><p><b>変換時間:</b> 1.62s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p226</h3><audio src="./sp/output_p231_p226.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p226.wav" controls></audio></div></div><img src="./sp/output_p231_p226.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#ffc300 45%,#e8a0b8 55%);"><h2>元論文の手法</h2><div class="box"><h3>p231</h3><audio src="./original/p231.wav" controls></audio><img src="./original/p231_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.14s</p><p><b>変換時間:</b> 401.47s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p230</h3><audio src="./mel/output_p231_p230.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p230.wav" controls></audio></div></div><img src="./mel/output_p231_p230.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#ffc300 45%,#e8a0b8 55%);"><h2>提案手法</h2><div class="box"><h3>p231</h3><audio src="./original/p231.wav" controls></audio><img src="./original/p231_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.14s</p><p><b>変換時間:</b> 1.65s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p230</h3><audio src="./sp/output_p231_p230.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p230.wav" controls></audio></div></div><img src="./sp/output_p231_p230.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#ffc300 45%,#ffc300 55%);"><h2>元論文の手法</h2><div class="box"><h3>p231</h3><audio src="./original/p231.wav" controls></audio><img src="./original/p231_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.14s</p><p><b>変換時間:</b> 401.18s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p231</h3><audio src="./mel/output_p231_p231.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p231.wav" controls></audio></div></div><img src="./mel/output_p231_p231.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#ffc300 45%,#ffc300 55%);"><h2>提案手法</h2><div class="box"><h3>p231</h3><audio src="./original/p231.wav" controls></audio><img src="./original/p231_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.14s</p><p><b>変換時間:</b> 1.42s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p231</h3><audio src="./sp/output_p231_p231.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p231.wav" controls></audio></div></div><img src="./sp/output_p231_p231.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#ffc300 45%,#02c9c9 55%);"><h2>元論文の手法</h2><div class="box"><h3>p231</h3><audio src="./original/p231.wav" controls></audio><img src="./original/p231_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.14s</p><p><b>変換時間:</b> 399.03s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p232</h3><audio src="./mel/output_p231_p232.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p232.wav" controls></audio></div></div><img src="./mel/output_p231_p232.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#ffc300 45%,#02c9c9 55%);"><h2>提案手法</h2><div class="box"><h3>p231</h3><audio src="./original/p231.wav" controls></audio><img src="./original/p231_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.14s</p><p><b>変換時間:</b> 1.47s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p232</h3><audio src="./sp/output_p231_p232.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p232.wav" controls></audio></div></div><img src="./sp/output_p231_p232.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#02c9c9 45%,#bccf3d 55%);"><h2>元論文の手法</h2><div class="box"><h3>p232</h3><audio src="./original/p232.wav" controls></audio><img src="./original/p232_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.56s</p><p><b>変換時間:</b> 483.1s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p226</h3><audio src="./mel/output_p232_p226.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p226.wav" controls></audio></div></div><img src="./mel/output_p232_p226.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#02c9c9 45%,#bccf3d 55%);"><h2>提案手法</h2><div class="box"><h3>p232</h3><audio src="./original/p232.wav" controls></audio><img src="./original/p232_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.56s</p><p><b>変換時間:</b> 1.57s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p226</h3><audio src="./sp/output_p232_p226.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p226.wav" controls></audio></div></div><img src="./sp/output_p232_p226.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#02c9c9 45%,#e8a0b8 55%);"><h2>元論文の手法</h2><div class="box"><h3>p232</h3><audio src="./original/p232.wav" controls></audio><img src="./original/p232_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.56s</p><p><b>変換時間:</b> 482.75s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p230</h3><audio src="./mel/output_p232_p230.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p230.wav" controls></audio></div></div><img src="./mel/output_p232_p230.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#02c9c9 45%,#e8a0b8 55%);"><h2>提案手法</h2><div class="box"><h3>p232</h3><audio src="./original/p232.wav" controls></audio><img src="./original/p232_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.56s</p><p><b>変換時間:</b> 1.53s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p230</h3><audio src="./sp/output_p232_p230.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p230.wav" controls></audio></div></div><img src="./sp/output_p232_p230.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#02c9c9 45%,#ffc300 55%);"><h2>元論文の手法</h2><div class="box"><h3>p232</h3><audio src="./original/p232.wav" controls></audio><img src="./original/p232_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.56s</p><p><b>変換時間:</b> 483.98s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p231</h3><audio src="./mel/output_p232_p231.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p231.wav" controls></audio></div></div><img src="./mel/output_p232_p231.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#02c9c9 45%,#ffc300 55%);"><h2>提案手法</h2><div class="box"><h3>p232</h3><audio src="./original/p232.wav" controls></audio><img src="./original/p232_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.56s</p><p><b>変換時間:</b> 1.52s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p231</h3><audio src="./sp/output_p232_p231.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p231.wav" controls></audio></div></div><img src="./sp/output_p232_p231.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#02c9c9 45%,#02c9c9 55%);"><h2>元論文の手法</h2><div class="box"><h3>p232</h3><audio src="./original/p232.wav" controls></audio><img src="./original/p232_mel.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.56s</p><p><b>変換時間:</b> 491.0s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p232</h3><audio src="./mel/output_p232_p232.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p232.wav" controls></audio></div></div><img src="./mel/output_p232_p232.png" class="photo"/></div></div>
+  <div class="box-wrap" style="background:linear-gradient(to right,#02c9c9 45%,#02c9c9 55%);"><h2>提案手法</h2><div class="box"><h3>p232</h3><audio src="./original/p232.wav" controls></audio><img src="./original/p232_sp.png" class="photo"/></div><div class="box-arrow"><p><b>元音源の長さ:</b> 2.56s</p><p><b>変換時間:</b> 1.51s</p><img src="./images/mark_arrow_right.png" class="photo"/></div><div class="box"><div class="audio-box"><div><h3>p232</h3><audio src="./sp/output_p232_p232.wav" controls></audio></div><div><h4>目標話者</h4><audio src="./original/p232.wav" controls></audio></div></div><img src="./sp/output_p232_p232.png" class="photo"/></div></div>
 </body>
 </html>

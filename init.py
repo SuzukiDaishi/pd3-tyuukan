@@ -30,8 +30,7 @@ def get_html(base_name, conv_name, secs, mel_or_sp):
 <img src="./original/{base_name}_{mel_or_sp}.png" class="photo"/>
 </div>
 <div class="box-arrow">
-<p><b>元音源の長さ:</b> {secs[0]}s</p>
-<p><b>変換時間:</b> {secs[1]}s</p>
+<p><b>RTF:</b> {secs[1]/secs[0]}</p>
 <img src="./images/mark_arrow_right.png" class="photo"/>
 </div>
 <div class="box">

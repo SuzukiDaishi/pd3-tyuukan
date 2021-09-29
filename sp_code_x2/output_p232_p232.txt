@@ -1,0 +1,7 @@
+Loaded the voice encoder model on cpu in 0.01 seconds.
+Loaded the voice encoder model on cpu in 0.01 seconds.
+音源の長さ: 2.5613125
+全体の時間: 2.1082639694213867
+AutoVCの時間: 2.0579028129577637
+位相推定の時間: 0.05036520957946777
+saved: ./output_p232_p232.wav

@@ -30,7 +30,7 @@ def get_html(base_name, conv_name, secs, mel_or_sp):
 <img src="./original/{base_name}_{mel_or_sp}.png" class="photo"/>
 </div>
 <div class="box-arrow">
-<p><b>RTF:</b> {secs[1]/secs[0]}</p>
+<p><b>RTF:</b> {round(secs[1]/secs[0], 2)}</p>
 <img src="./images/mark_arrow_right.png" class="photo"/>
 </div>
 <div class="box">
